@@ -31,10 +31,10 @@ and the `puppet_master_challenge` package
 
 ## Launch files 
 The `puppet_master_challenge_solution` package have 2 launch files:
-1. run_solution.launch: runs the complete solution  challenge 
+1. `run_solution.launch`: runs the complete solution  challenge 
 (Puppet Master, Turtlesim and puppet-master-controller)
 
-2. run_server.launch: runs the puppet-master-controller action server
+2. `run_server.launch`: runs the puppet-master-controller action server
 
 ## Running the package
 To launch the Puppet Master node, the TurtleSim simulation node, and the puppet-master-controller node,

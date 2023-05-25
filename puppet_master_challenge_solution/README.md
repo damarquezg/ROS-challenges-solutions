@@ -11,17 +11,17 @@ The action client is defined in the provided `puppet_master_challenge` package.
 
 ## Installation
 1. Create a catkin workspace
-mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws/src
-catkin_init_workspace # Make sure you are in the src directory
+`mkdir -p ~/catkin_ws/src`
+`cd ~/catkin_ws/src`
+`catkin_init_workspace # Make sure you are in the src directory`
 
 2. navigate to the src directory and copy this package (`puppet_master_challenge_solution` package) 
 and the `puppet_master_challenge` package
 
 3. source the workspace and compile
-cd ~/catkin_ws/ # Takes you back to the catkin_ws directory
-source devel/setup.bash
-catkin_make
+`cd ~/catkin_ws/ # Takes you back to the catkin_ws directory`
+`source devel/setup.bash`
+`catkin_make`
 
 ## Launch files 
 The `puppet_master_challenge_solution` package have 2 launch files:
@@ -33,22 +33,29 @@ The `puppet_master_challenge_solution` package have 2 launch files:
 ## Running the package
 To launch the Puppet Master node, the TurtleSim simulation node, and the puppet-master-controller node,
 run the following commands:
+
 0. source the catkin workpsace
-source devel/setup.bash
 
-1. Option 1
+`source devel/setup.bash`
+
+1. Option 1 -
 In a terminal:
-roslaunch puppet_master_challenge_solution run_solution.launch
 
-2. Option 2
-In two separate terminals:
-roslaunch puppet_master_challenge run.launch
-roslaunch puppet_master_challenge_solution run_server.launch
+`roslaunch puppet_master_challenge_solution run_solution.launch`
 
-3. Option 3
+2. Option 2 - 
 In two separate terminals:
-roslaunch puppet_master_challenge run.launch
-rosrun puppet_master_challenge_solution puppet_master_controller
+
+`roslaunch puppet_master_challenge run.launch`
+
+`roslaunch puppet_master_challenge_solution run_server.launch`
+
+3. Option 3 - 
+In two separate terminals:
+
+`roslaunch puppet_master_challenge run.launch`
+
+`rosrun puppet_master_challenge_solution puppet_master_controller`
 
 
 ## Snap

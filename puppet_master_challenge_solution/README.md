@@ -11,16 +11,22 @@ The action client is defined in the provided `puppet_master_challenge` package.
 
 ## Installation
 1. Create a catkin workspace
+
 `mkdir -p ~/catkin_ws/src`
+
 `cd ~/catkin_ws/src`
+
 `catkin_init_workspace # Make sure you are in the src directory`
 
 2. navigate to the src directory and copy this package (`puppet_master_challenge_solution` package) 
 and the `puppet_master_challenge` package
 
 3. source the workspace and compile
+
 `cd ~/catkin_ws/ # Takes you back to the catkin_ws directory`
+
 `source devel/setup.bash`
+
 `catkin_make`
 
 ## Launch files 

@@ -1,0 +1,4 @@
+<launch>
+	<include file="$(find puppet_master_challenge)/launch/run.launch"/>
+	<node name = "move" pkg = "puppet_master_challenge_solution" type = "puppet_master_controller" required = "true" output = "screen"/>
+</launch>

@@ -1,0 +1,6 @@
+<launch>
+	<node name = "turtlesim" pkg = "turtlesim" type = "turtlesim_node" required = "true" />
+	<node name = "puppet_master" pkg = "puppet_master_challenge" type = "puppet_master" required = "true" output = "screen">
+		<remap from="turtle_pose" to="/turtle1/pose" />
+	</node>
+</launch>

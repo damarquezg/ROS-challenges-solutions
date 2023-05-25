@@ -1,0 +1,18 @@
+name: puppet-master-controller
+version: '0.1'
+summary: puppet master controller server
+description: |
+ This package launches the puppet-master-controller ROS action server.
+ 
+confinement: devmode
+base: core18
+ 
+parts:
+ workspace:
+   plugin: catkin
+   source: .
+   catkin-packages: [puppet_master_challenge puppet_master_challenge_solution]
+ 
+apps:
+ puppet-master-controller:
+   command: opt/ros/melodic/bin/roslaunch puppet_master_challenge_solution run_server.launch
